@@ -1,0 +1,80 @@
+---
+subject: My Marketing Email Template Subject
+---
+
+<style>
+  code,pre{font-family:Operator Mono,Inconsolata,"Inconsolata-g for Powerline",monospace;line-height:1.5}pre{background:#FCFCFC;border:1px solid #F0F0F0;border-radius:3px;overflow-x:auto;padding:1rem;white-space:pre-wrap;}pre code{background:0 0;padding:0}code{background:#f8f8f8;border-radius:3px;color:#BF616A;font-size:16px;padding:1px 3px;word-break:normal}a code,pre code{color:inherit}hr{border: 1px solid #ddd; margin:20px 0;}blockquote{border-left: 4px solid #e9edf3;margin:0;margin-left:15px;padding-left:12px;width:90%;}blockquote p{color: #73859d;}figure{margin: 2rem 0;}figcaption{color: #73859d;font-size: 14px;margin-top: 5px;}h2{margin-bottom: 0;margin-top: 1.8rem;}h5{font-weight: 600;margin-bottom:0;margin-top:3rem;}img+img{margin-top:.5rem;}a{color:#fe5858;}h1 a{text-decoration:none;}h2{font-weight:400;}
+</style>
+
+<wrapper class="header">
+  <container>
+    <row>
+      <columns>
+        <spacer size="20"></spacer>
+        <img src="assets/img/newsletter-logo.png" style="max-width: 250px" alt="Brightly Colored Logo">
+        <spacer size="10"></spacer>
+        <h2>Published links and articles from the week.</h2>
+      </columns>
+    </row>
+  </container>
+</wrapper>
+
+
+<container>
+  <spacer size="40"></spacer>
+  <callout class="from-the-editor">
+    <row>
+      <columns>
+        <h3>Note from the Editor</h3>
+        <p><multiline label='Note from the Editor'>Main feature introduction</multiline></p>
+        <p>&mdash;<strong>Timothy B. Smith</strong></p>
+      </columns>
+    </row>
+  </callout>
+  <spacer size="40"></spacer>
+  <row>
+    <columns>
+      <datarepeater type="rss" src="https://brightlycolored.org/atom.xml">
+        <div class="article__content">
+          <h1 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:system,-apple-system,BlinkMacSystemFont,Avenir,sans-serif;font-size:26px;font-weight:400;line-height:1.3;margin:0;margin-bottom:0;padding:0;text-align:left;word-wrap:normal"><rssitemlink><rsstitle></rsstitle></rssitemlink></h1>
+          <p style="Margin:0;Margin-bottom:10px;color:#465d7d;font-family:system,-apple-system,BlinkMacSystemFont,Avenir,sans-serif;font-size:15px;font-weight:400;line-height:1.4;margin:0;margin-bottom:20px;padding:0;text-align:left">By <rssauthor></rssauthor> on <rssitemmonthname></rssitemmonthname> <rssitemday></rssitemday>, <rssitemyear></rssitemyear></p>
+
+          <rssbody paragraphs="all"></rssbody>
+        </div>
+      </datarepeater>
+    </columns>
+  </row>
+<spacer size="40"></spacer>
+</container>
+
+<wrapper class="sub-footer">
+  <container>
+    <row>
+      <columns>
+        <spacer size="15"></spacer>
+        <webversion>Web Version</webversion> &middot;
+        <preferences>Manage Subscription</preferences> &middot; <unsubscribe>Unsubscribe</unsubscribe>
+      </columns>
+    </row>
+  </container>
+</wrapper>
+
+<wrapper class="footer">
+  <spacer size="20"></spacer>
+  <container>
+    <row>
+      <columns>
+        <p><a href="https://brightlycolored.org">Brightly Colored</a> is a blog written by Tim Smith and friends about design, development, technology, Apple, Star Wars, movies, comics, and other geekery.</p>
+
+        <p>
+          <strong>Timothy B. Smith</strong><br>
+          417 Wyoming St E.<br>
+          Saint Paul, MN 55107
+        </p>
+
+        <p><em>Brightly Colored</em> &copy; 2013&ndash;<currentyear> Anythin’ Goes LLC &amp; Timothy B. Smith.</p>
+
+      </columns>
+    </row>
+  </container>
+</wrapper>

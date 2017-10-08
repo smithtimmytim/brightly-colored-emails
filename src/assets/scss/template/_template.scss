@@ -1,0 +1,59 @@
+
+.header,
+.header table.container {
+  background-color: $secondary-color;
+}
+
+.footer,
+.footer table.container {
+  background-color: #eaedf3;
+}
+
+.sub-footer,
+.sub-footer table.container {
+  background-color: darken(#eaedf3, 5);
+}
+
+
+.header h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+th.callout-inner.from-the-editor {
+  background: #eaedf3;
+  border: 1px solid darken(#eaedf3, 10);
+  h3 {
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+
+  }
+}
+
+h1 + h2 {
+  color: #465d7d;
+  font-weight: 300;
+  margin-top: -11px;
+}
+
+.article__content {
+  margin-bottom: 4rem;
+}
+
+.footer th,
+.footer p,
+.sub-footer th,
+.sub-footer p {
+  font-size: 14px;
+}
+
+.footer p {
+  width: 70%;
+  margin-bottom: 1.1rem;
+}
