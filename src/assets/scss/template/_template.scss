@@ -1,30 +1,39 @@
+$primary: #ff008f;
+$secondary: #9c1c90;
+$accent: #ffe000;
 
 .header,
 .header table.container {
-  background-color: $secondary-color;
+  background-color: $primary-color;
 }
 
 .footer,
 .footer table.container {
-  background-color: #eaedf3;
+  background-color: $secondary;
+  color: white;
 }
 
 .sub-footer,
 .sub-footer table.container {
-  background-color: darken(#eaedf3, 5);
+  background-color: darken($secondary, 5);
 }
 
+.sub-footer p,
+.sub-footer th,
+.sub-footer a {
+  color: $accent;
+}
 
 .header h2 {
-  color: white;
+  color: $accent;
   font-size: 1.4rem;
   font-weight: 300;
   margin-top: 0;
 }
 
 th.callout-inner.from-the-editor {
-  background: #eaedf3;
-  border: 1px solid darken(#eaedf3, 10);
+  background: lighten($secondary, 58);
+  border: none;
   h3 {
     font-weight: 600;
     margin-top: 1rem;
@@ -32,12 +41,10 @@ th.callout-inner.from-the-editor {
   p {
     font-size: 15px;
     line-height: 1.5;
-
   }
 }
 
 h1 + h2 {
-  color: #465d7d;
   font-weight: 300;
   margin-top: -11px;
 }
@@ -54,6 +61,7 @@ h1 + h2 {
 }
 
 .footer p {
+  color: white;
   width: 70%;
   margin-bottom: 1.1rem;
 }
